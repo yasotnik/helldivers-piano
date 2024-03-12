@@ -11,6 +11,11 @@ export enum KeyStatus {
     notPressed = "not-pressed",
 }
 
+export enum Status {
+    Ok = "ok",
+    Error = "error",
+}
+
 export const StratagemCode = {
     resupply: [Direction.Down, Direction.Down, Direction.Up, Direction.Right],
     eagle500kg: [
@@ -28,3 +33,15 @@ export const StratagemCode = {
         Direction.Up,
     ],
 };
+
+export const AllowedKeys = [
+    "w",
+    "a",
+    "s",
+    "d",
+    "ArrowUp",
+    "ArrowLeft",
+    "ArrowDown",
+    "ArrowRight",
+    "enter",
+];

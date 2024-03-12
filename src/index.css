@@ -78,3 +78,74 @@ button:focus-visible {
 .key.error {
     background-color: red;
 }
+
+.reset-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.score {
+    margin: 0 auto;
+    position: fixed;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: #000 0px 0px 10px;
+}
+
+.status {
+    margin: 0 auto;
+    position: fixed;
+    width: 5em;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: #000 0px 0px 10px;
+}
+
+.status.ok {
+    color: green;
+}
+
+.status.error {
+    z-index: 100;
+    background: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    animation: fade-in 10s linear;
+    color: #ff0000;
+  * {
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-size: 8em;
+    font-weight: 400;
+    animation: fade-in 10s linear, text-zoom 5s linear;
+  }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes text-zoom {
+    0% { font-size: 5em; }
+    25% { font-size: 6em; }
+    50% { font-size: 7em; }
+    75% { font-size: 8em; }
+    100% { font-size: 8em; }
+}
